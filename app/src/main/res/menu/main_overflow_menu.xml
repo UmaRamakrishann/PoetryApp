@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/browse_all_poems_menu"
+          android:title="@string/browse_all_poems" />
+    <item android:id="@+id/browse_favorites_menu"
+          android:title="@string/browse_favorites" />
+    <item android:id="@+id/poem_of_the_day_menu"
+          android:title="@string/poem_of_the_day" />
+    <item
+        android:id="@+id/logout_menu"
+        android:title="@string/logout" />
+</menu>

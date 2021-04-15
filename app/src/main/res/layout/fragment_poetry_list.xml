@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".main.PoetryListFragment">
+
+    <data>
+        <variable
+            name="viewModel"
+            type="com.udacity.capstone.poetry.main.PoetryViewModel" />
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/poetry_List"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="@color/crane_purple_900"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0"
+            tools:listitem="@layout/poetry_item"></androidx.recyclerview.widget.RecyclerView>
+        <TextView
+            android:id="@+id/no_favorites_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:fontFamily="monospace"
+            app:goneIfFalse="@{viewModel.showNoPoems}"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:text="@string/no_favorites_text"
+            android:textSize="@dimen/text_size_large"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.375"
+            android:contentDescription="@string/no_favorites_text"/>
+        <TextView
+            android:id="@+id/text_loading"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:fontFamily="monospace"
+            android:text="@string/loading_poems"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_large"
+            app:goneIfFalse="@{viewModel.showLoading}"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.375"
+            android:contentDescription="@string/loading_poems"/>
+
+        <ProgressBar
+            android:id="@+id/status_loading_wheel"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:indeterminate="true"
+            app:goneIfFalse="@{viewModel.showLoading}"
+            app:layout_constraintBottom_toTopOf="@+id/poetry_List"
+            app:layout_constraintTop_toBottomOf="@+id/poetry_List"
+            tools:layout_editor_absoluteX="-58dp" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</layout>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">PoetryApp</string>
+    <string name="welcome_to_the_poetry_app">Welcome to the Poetry App</string>
+    <string name="login">Login</string>
+    <string name="loading_poems">Please wait....loading poems</string>
+    <string name="add_to_favorites">Add To Favorites</string>
+</resources>

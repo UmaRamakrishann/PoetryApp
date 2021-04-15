@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">PoetryApp</string>
+    <string name="welcome_to_the_poetry_app">Welcome to the Poetry App!</string>
+    <string name="login">Login</string>
+    <string name="loading_poems">Please wait....loading poems</string>
+    <string name="add_to_favorites">Add To Favorites</string>
+    <string name="remove_from_favorites">Remove From Favorites</string>
+    <string name="browse_all_poems">Browse All Poems</string>
+    <string name="browse_favorites">Browse Favorites</string>
+    <string name="poem_of_the_day">Poem Of The Day</string>
+    <string name="poetryapp_notification_channel_id" translatable="false">poetryapp_channel</string>
+    <string name="poetryapp_notification_channel_name" translatable="true">PoetryApp</string>
+    <string name="notification_title">PoetryApp </string>
+    <string name="notification_description">Poem Of The Day</string>
+    <string name="notification_button">Read Poem</string>
+    <string name="stored_title">storedTitle</string>
+    <string name="message_body">New Poem Of the Day is Available</string>
+    <string name="welcome_page_picture">This is a picture on the welcome page of the Poetry App</string>
+    <string name="no_favorites_text">There are no favorites selected at this time</string>
+    <string name="logout">LOGOUT</string>
+</resources>

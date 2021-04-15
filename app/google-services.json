@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "1076199115741",
+    "project_id": "poetryapp-7d6d5",
+    "storage_bucket": "poetryapp-7d6d5.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1076199115741:android:e99bc887a0952ca0218434",
+        "android_client_info": {
+          "package_name": "com.udacity.capstone.poetry"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1076199115741-eu0qiese065seoc1204h937s9kgjtlft.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.udacity.capstone.poetry",
+            "certificate_hash": "1107df9b31df669598c15378cdfd396f76c4313b"
+          }
+        },
+        {
+          "client_id": "1076199115741-eqc45p8pe5ilje3irg8kkh7hqd51ladi.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD4D9TaRwzgrzU9dG5DsTMZCPoBG6GYt7Q"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1076199115741-eqc45p8pe5ilje3irg8kkh7hqd51ladi.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
